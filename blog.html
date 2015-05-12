@@ -11,41 +11,57 @@
     <body>
         
         
-        <header class="blog-page-header">
+        <header class="page-header">
 		
             <div class="top-menu">
                 <div class="top-menu__logo">PINK</div>
-                <a href="#" class="top-menu__link-icon">Меню</a>
+                <a href="#" class="top-menu__link-icon-open">Меню</a>
+                
+                <a href="#" class="top-menu__link-icon-close">Меню</a>
+                <ul class="top-menu__links">
+                    <li><a href="#">Информация</li>
+                    <li><a href="#">Возможности</li>
+                    <li><a href="#">Отзывы</li>
+                    <li><a href="#">Стоимость</li>
+                </ul>    
             </div>
             
             <p class="blog-page-header__big-text">Блог путешественников, пользователей Пинк</p>
-			
+    
         </header>
         
         
         <div class="posts-preview">
 		
-            <p class="posts-preview__title">Антон и Надя в Тайланде</p>
-            <time datetime="2014-11-02" class="posts-preview__public-date">Опубликовано: 6 месяцев назад</time> 
-            <p>Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>
+            <div class="posts-preview__item">
+                <h2 class="posts-preview__title">Антон и Надя в Тайланде</h2>
+                <time datetime="2014-11-02" class="posts-preview__public-date">Опубликовано: 6 месяцев назад</time> 
+                <p>Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>
+            </div>
             
             <hr>
             
-            <p class="posts-preview__title">Гастрольный тур "Кубанских борщеваров"</p>
-            <time datetime="2009-05-02" class="posts-preview__public-date">Опубликовано: 5 лет назад</time> 
-            <p>Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани провела весь год в гастролях по России и ближнему (а также средннему) зарубежью.</p>
+            <div class="posts-preview__item">
+                <h2 class="posts-preview__title">Гастрольный тур "Кубанских борщеваров"</h2>
+                <time datetime="2009-05-02" class="posts-preview__public-date">Опубликовано: 5 лет назад</time> 
+                <p>Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани провела весь год в гастролях по России и ближнему (а также средннему) зарубежью.</p>
+            </div>
+                
+            <hr>
+            
+            <div class="posts-preview__item">
+                <h2 class="posts-preview__title">Чета Болонских в Париже</h2>
+                <time datetime="1915-05-02" class="posts-preview__public-date">Опубликовано: 100 лет назад</time> 
+                <p>Невероятные приключения русских во Франции. Интриги, предательства, погони и, разумеется, убийства. Читайту криминально-исторический трактат в двух томах.</p>
+            </div>
             
             <hr>
             
-            <p class="posts-preview__title">Чета Болонских в Париже</p>
-            <time datetime="1915-05-02" class="posts-preview__public-date">Опубликовано: 100 лет назад</time> 
-            <p>Невероятные приключения русских во Франции. Интриги, предательства, погони и, разумеется, убийства. Читайту криминально-исторический трактат в двух томах.</p>
-            
-            <hr>
-            
-            <p class="posts-preview__title">Путешествие на яхте сеньора Христофора</p>
-            <time datetime="1492-05-02" class="posts-preview__public-date">Опубликовано: 523 года назад</time> 
-            <p>Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!</p> 
+            <div class="posts-preview__item">
+                <h2 class="posts-preview__title">Путешествие на яхте сеньора Христофора</h2>
+                <time datetime="1492-05-02" class="posts-preview__public-date">Опубликовано: 523 года назад</time> 
+                <p>Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!</p> 
+            </div>
 			
         </div>
         
@@ -58,18 +74,22 @@
         </ul>
         
        
-        <div class="logo-footer">PINK</div>
+        <footer class="page-footer">
         
+            <div class="page-footer__logo">PINK</div>
+
+
+            <div class="social-btn">
+                <a href="#" class="social-btn__item  social-btn__item--twitter">Twitter</a>
+                <a href="#" class="social-btn__item  social-btn__item--facebook">Facebook</a>
+                <a href="#" class="social-btn__item  social-btn__item--youtube">Youtube</a>
+            </div>   
+
+
+            <p class="page-footer__copyright">Разработано</p>
+
+        </footer>    
         
-        <div class="social-btn">
-            <a href="#" class="social-btn__item  social-btn__item--twitter">Twitter</a>
-            <a href="#" class="social-btn__item  social-btn__item--facebook">Facebook</a>
-            <a href="#" class="social-btn__item  social-btn__item--youtube">Youtube</a>
-        </div>   
-        
-        
-        <p class="copyright">Разработано</p>
-            
             
     </body>
     

@@ -11,11 +11,19 @@
     <body>
         
         
-        <header class="form-page-header">
+        <header class="page-header">
 		
             <div class="top-menu">
                 <div class="top-menu__logo">PINK</div>
-                <a href="#" class="top-menu__link-icon">Меню</a>
+                <a href="#" class="top-menu__link-icon-open">Меню</a>
+                
+                <a href="#" class="top-menu__link-icon-close">Меню</a>
+                <ul class="top-menu__links">
+                    <li><a href="#">Информация</li>
+                    <li><a href="#">Возможности</li>
+                    <li><a href="#">Отзывы</li>
+                    <li><a href="#">Стоимость</li>
+                </ul>    
             </div>
 			
             <p class="form-page-header__big-text">Конкурс на самое безбашенное путешествие с Пинк</p>
@@ -25,70 +33,99 @@
         
         <p class="text-align-center">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p> 
         
-        
-        <form class="contest">
+        <div class="form-contest">
+        <form>
 		
             <div class="form-personal-info">
-			
-                <label for="name" class="form-personal-info__title">Имя:*</label>
-                <input type="text" class="form-personal-info__input-text" name="name" id="name" placeholder="Введите ваше имя"> 
+                <div class="form-personal-info__name">
+                    <label for="name" class="form-personal-info__title">Имя:*</label>
+                    <input type="text" class="form-personal-info__input-text" name="name" id="name" placeholder="Введите ваше имя"> 
+                </div>
 
-                <label for="surname" class="form-personal-info__title">Фамилия:*</label>
-                <input type="text" class="form-personal-info__input-text" name="surname" id="surname" placeholder="Укажите фамилию">
-
-                <label for="patronymic" class="form-personal-info__title">Имя:*</label>
-                <input type="text" class="form-personal-info__input-text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                <div class="form-personal-info__surname">
+                    <label for="surname" class="form-personal-info__title">Фамилия:*</label>
+                    <input type="text" class="form-personal-info__input-text" name="surname" id="surname" placeholder="Укажите фамилию">
+                </div>
+                
+                <div class="form-personal-info__patronymic">
+                    <label for="patronymic" class="form-personal-info__title">Отчество:</label>
+                    <input type="text" class="form-personal-info__input-text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                </div>
             
 			</div>
 
             
             <div class="form-applications">
 			
-            <p class="form-applications__title">С каким приложением путешествовали?*</p>
+                <p class="form-applications__title">С каким приложением путешествовали?*</p>
                 
-                <input type="radio" class="form-applications__input-radio" value="Pink для iOS" id="applications-ios" checked>
-                <label for="applications-ios" class="form-applications__label">Pink для iOS</label>
+                <div class="form-applications__ios">
+                    <input type="radio" class="form-applications__input-radio" value="Pink для iOS" id="applications-ios" checked>
+                    <label for="applications-ios" class="form-applications__label">Pink для iOS</label>
+                </div>
                 
-                <input type="radio" class="form-applications__input-radio" value="Pink для Android" id="applications-android">
-                <label for="applications-android" class="form-applications__label">Pink для Android</label>
+                <div class="form-applications__android">
+                    <input type="radio" class="form-applications__input-radio" value="Pink для Android" id="applications-android">
+                    <label for="applications-android" class="form-applications__label">Pink для Android</label>
+                </div>
                 
-                <input type="radio" class="form-applications__input-radio" value="Windows Phone" id="applications-win">
-                <label for="applications-win" class="form-applications__label">Windows Phone</label>
+                <div class="form-applications__win">
+                    <input type="radio" class="form-applications__input-radio" value="Windows Phone" id="applications-win">
+                    <label for="applications-win" class="form-applications__label">Windows Phone</label>
+                </div>
             
 			</div>
             
             
             <div class="form-travel-dates">
 			
-            <p class="form-travel-dates__title">Когда вы путешествовали?*</p>
+                <p class="form-travel-dates__title">Когда вы путешествовали?*</p>
             
-                <input type="text" class="form-travel-dates__input-text" name="start-travel-date" id="start-travel-date" placeholder="1 апреля 2015">
-                <label for="start-travel-date" class="form-travel-dates__title">Дата выезда</label>
+                <div class="form-travel-dates__start">
+                    <input type="text" class="form-travel-dates__input-text" name="start-travel-date" id="start-travel-date" placeholder="1 апреля 2015">
+                    <label for="start-travel-date" class="form-travel-dates__title">Дата выезда</label>
+                </div>    
 
-
-                <input type="text" class="form-travel-dates__input-text" name="finish-travel-date" id="finish-travel-date" placeholder="10 дней">
-                <label for="duration" class="form-travel-dates__title">Продолжительность</label>
-
-                <input type="text" class="form-travel-dates__input-text" name="duration" id="duration" placeholder="1 апреля 2015">
-                <label for="finish-travel-date" class="form-travel-dates__title">Дата возвращения</label>
+                <div class="form-travel-dates__duration">
+                    <input type="text" class="form-travel-dates__input-text" name="duration" id="duration" placeholder="10 дней">
+                    <label for="duration" class="form-travel-dates__title">Продолжительность</label>
+                </div>
+                
+                <div class="form-travel-dates__finish">
+                    <input type="text" class="form-travel-dates__input-text" name="finish-travel-date" id="finish-travel-date" placeholder="1 апреля 2015">
+                    <label for="finish-travel-date" class="form-travel-dates__title">Дата возвращения</label>
+                </div>
             
 			</div>
             
             
             <div class="form-travelers">
-			
-                <label for="travelers-number" class="form-travelers__title">Количество попутчиков*</label>
-                <input type="text" class="form-travelers__input-text" name="travelers-number" id="travelers-number" placeholder="2 чел">
+			     
+                <div class="travelers-number">
+                    <label for="travelers-number" class="form-travelers__title">Количество попутчиков*</label>
+                    <input type="text" class="form-travelers__input-text" name="travelers-number" id="travelers-number" placeholder="2 чел">
+                </div>
+                
+                <div class="travelers-name-1">
+                    <label for="travelers-name-1" class="form-travelers__title">Имя:*</label>
+                    <input type="text" class="form-travelers__input-text" name="travelers-name-1" id="travelers-name-1" placeholder="Введите ваше имя">
+                </div>    
+                
+                <div class="travelers-nickname-1">
+                    <label for="travelers-nickname-1" class="form-travelers__title">Прозвище:</label>
+                    <input type="text" class="form-travelers__input-text" name="travelers-nickname-1" id="travelers-nickname-1" placeholder="Ну как же без этого!">
+                </div>
 
-                <label for="travelers-name-1" class="form-travelers__title">Имя:*</label>
-                <input type="text" class="form-travelers__input-text" name="travelers-name-1" id="travelers-name-1" placeholder="Введите ваше имя">
-                <label for="travelers-nickname-1" class="form-travelers__title">Прозвище:</label>
-                <input type="text" class="form-travelers__input-text" name="travelers-nickname-1" id="travelers-nickname-1" placeholder="Ну как же без этого!">
-
-                <label for="travelers-name-2" class="form-travelers__title">Имя:*</label>
-                <input type="text" class="form-travelers__input-text" name="travelers-name-2" id="travelers-name-2" placeholder="Введите ваше имя">
-                <label for="travelers-nickname-2" class="form-travelers__title">Прозвище:</label>
-                <input type="text" class="form-travelers__input-text" name="travelers-nickname-2" id="travelers-nickname-2" placeholder="Ну как же без этого!">
+                <div class="travelers-name-2">
+                    <label for="travelers-name-2" class="form-travelers__title">Имя:*</label>
+                    <input type="text" class="form-travelers__input-text" name="travelers-name-2" id="travelers-name-2" placeholder="Введите ваше имя">
+                    <label for="travelers-nickname-2" class="form-travelers__title">Прозвище:</label>
+                </div>    
+                    
+                <div class="travelers-nickname-2">
+                    <label for="travelers-nickname-2" class="form-travelers__title">Прозвище:</label>
+                    <input type="text" class="form-travelers__input-text" name="travelers-nickname-2" id="travelers-nickname-2" placeholder="Ну как же без этого!">
+                </div>
             
 			</div>
             
@@ -97,23 +134,35 @@
 			
                 <p class="form-travel-progress__title">Ваши безбашенные достижения в путешествии</p>
                 
-                <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-1" value="Сделал селфи с акулой" checked>
-                <label for="travel-progress-1" class="form-travel-progress__label">Сделал селфи с акулой</label>
+                <div class="form-travel-progress__selfi">
+                    <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-selfi" value="Сделал селфи с акулой" checked>
+                    <label for="travel-progress-selfi" class="form-travel-progress__label">Сделал селфи с акулой</label>
+                </div>
             
-                <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-2" value="Обгорел на пляже" checked>
-                <label for="travel-progress-2" class="form-travel-progress__label">Обгорел на пляже</label>
+                <div class="form-travel-progress__burn">
+                    <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-burn" value="Обгорел на пляже" checked>
+                    <label for="travel-progress-burn" class="form-travel-progress__label">Обгорел на пляже</label>
+                </div>
             
-                <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-3" value="Видел Чака Норриса">
-                <label for="travel-progress-3" class="form-travel-progress__label">Видел Чака Норриса</label>
+                <div class="form-travel-progress__chak">
+                    <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-chak" value="Видел Чака Норриса">
+                    <label for="travel-progress-chak" class="form-travel-progress__label">Видел Чака Норриса</label>
+                </div>
             
-                <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-4" value="Накупил сувениров">
-                <label for="travel-progress-4" class="form-travel-progress__label">Накупил сувениров</label>
+                <div class="form-travel-progress__souvenir">
+                    <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-souvenir" value="Накупил сувениров">
+                    <label for="travel-progress-souvenir" class="form-travel-progress__label">Накупил сувениров</label>
+                </div>
             
-                <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-5" value="Удержал башню" checked>
-                <label for="travel-progress-5" class="form-travel-progress__label">Удержал башню</label>
+                <div class="form-travel-progress__tower">
+                    <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-tower" value="Удержал башню" checked>
+                    <label for="travel-progress-tower" class="form-travel-progress__label">Удержал башню</label>
+                </div>
                 
-                <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-6" value="Разгромил отель">
-                <label for="travel-progress-6" class="form-travel-progress__label">Разгромил отель</label>
+                <div class="form-travel-progress__hotel">
+                <input type="checkbox" class="form-travel-progress__input-checkbox" id="travel-progress-hotel" value="Разгромил отель">
+                <label for="travel-progress-hotel" class="form-travel-progress__label">Разгромил отель</label>
+                </div>
            
 		   </div>
             
@@ -174,20 +223,25 @@
 		
 			
         </form>
+        </div>
         
         
-        <div class="logo-footer">PINK</div>
+        <footer class="page-footer">
         
+            <div class="page-footer__logo">PINK</div>
+
+
+            <div class="social-btn">
+                <a href="#" class="social-btn__item  social-btn__item--twitter">Twitter</a>
+                <a href="#" class="social-btn__item  social-btn__item--facebook">Facebook</a>
+                <a href="#" class="social-btn__item  social-btn__item--youtube">Youtube</a>
+            </div>   
+
+
+            <p class="page-footer__copyright">Разработано</p>
+
+        </footer>    
         
-        <div class="social-btn">
-            <a href="#" class="social-btn__item  social-btn__item--twitter">Twitter</a>
-            <a href="#" class="social-btn__item  social-btn__item--facebook">Facebook</a>
-            <a href="#" class="social-btn__item  social-btn__item--youtube">Youtube</a>
-        </div>   
-        
-        
-        <p class="copyright">Разработано</p>
-            
         
     </body>
     
