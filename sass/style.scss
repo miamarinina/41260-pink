@@ -1,5 +1,7 @@
-$color: #fff;
-$bg-color: #000;
+$white: #fff;
+$dark-blue: #1d2631;
+$color: #283645;
+$bg-color: $white;
 $wrap-width: 300px;
 
 html, body {
@@ -15,16 +17,34 @@ body {
 }
 
 .page-header {
-  &__logo-wrap {
-    width: $wrap-width;
-    height: $wrap-width/2;
-    margin: $wrap-width/4 auto 0;
-    text-align: center;
-  }
+    background-image: url(../img/intro.jpg);
+    background-color: $dark-blue; 
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 320px;
+    
+      &__top-nav {
+        clear: both;
+        content: "";
+          display: table;
+    }
+     
+      &__logo {
+        float: left;
+      }
 
-  &__logo-link {
-    color: $color;
-    font-size: 28px;
-    font-weight: bold;
-  }
+      &__logo-link {
+        color: $white;
+        font-size: 28px;
+        text-decoration: none;
+      }
+}
+
+
+.top-menu {
+    float: right;
+    
+    &__links {
+        display: none;
+    }
 }
